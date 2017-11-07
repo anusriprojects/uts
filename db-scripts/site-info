@@ -1,0 +1,15 @@
+﻿drop table play_evolutions;
+
+
+CREATE TABLE site_info (
+     site_id    integer PRIMARY KEY DEFAULT nextval('serial'),
+     name   varchar(40) NOT NULL CHECK (name <> '')
+);
+
+
+insert into site_info(name) values('Site 1')
+
+CREATE SEQUENCE serial START 1;
+
+
+select * from site_info where name like 'Site 1'

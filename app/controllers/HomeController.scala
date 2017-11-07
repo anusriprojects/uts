@@ -63,37 +63,7 @@ class HomeController @Inject() (cc: ControllerComponents, db: Database)(implicit
 
   }
 
-  def getSites = Action.async {
-    // access "default" database
-    Future({
-
-      db.withConnection { conn =>
-        // do whatever you need with the connection
-        try {
-          val stmt = conn.createStatement
-          val rs = stmt.executeQuery("SELECT * from site_info ")
-          var lst: ListBuffer[SiteInfo] = new ListBuffer[SiteInfo]()
-
-          while (rs.next()) {
-            /* val outString = rs.getString("name")*/
-            val dataMap = Map("name" -> rs.getString("name"))
-            lst += new SiteInfo(rs.getString("name"))
-          }
-
-          val jstr = Json.toJson(
-            lst.map { t =>
-              Map("SiteName" -> t.name)
-            })
-
-          Ok(jstr.toString())
-        } finally {
-
-        }
-      }
-
-    })(exec)
-
-  }
+  
 
   def addSite = Action.async { implicit request =>
     // access "default" database

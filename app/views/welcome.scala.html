@@ -10,11 +10,17 @@
   </div>
 </section>
 
-<ul>
-@for(p <- lst) {
-  <li>@p.name</li>
-}
-</ul>
+
+<table>
+	<tr>
+		<th>Site Name</th>
+	</tr>
+   @for(site <- lst){
+      <tr>
+          <td>@site.name</td>
+      </tr>
+    }
+</table>
 
 
 
