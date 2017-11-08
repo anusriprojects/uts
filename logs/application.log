@@ -1,173 +1,54 @@
-2017-11-07 20:10:00,538 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2017-11-07 20:10:00,577 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Starting...
-2017-11-07 20:10:00,797 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
-2017-11-07 20:10:00,882 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Start completed.
-2017-11-07 20:10:00,916 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:10:00,954 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:10:00,955 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://localhost/uts
-2017-11-07 20:10:00,976 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-11-07T14:40:00.973Z.
-2017-11-07 20:10:01,594 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
-2017-11-07 20:10:02,266 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-07 22:41:56,915 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2017-11-07 22:41:56,964 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Starting...
+2017-11-07 22:41:57,220 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-11-07 22:41:57,280 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Start completed.
+2017-11-07 22:41:57,313 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-07 22:41:57,344 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-07 22:41:57,346 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://localhost/uts
+2017-11-07 22:41:57,370 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-11-07T17:11:57.367Z.
+2017-11-07 22:41:57,913 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2017-11-07 22:41:58,519 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-11-07 20:10:02,282 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-11-07 20:10:02,523 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:10:02,694 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:10:02,702 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:10:02,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:10:02,708 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:10:02,709 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:10:02,710 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:10:02,711 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:10:02,712 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:10:02,712 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:10:02,714 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:10:02,715 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:10:02,717 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:10:02,718 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:10:02,719 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:10:02,720 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:13:01,828 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2017-11-07T14:43:01.828Z after 181s.
-2017-11-07 20:13:01,831 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2017-11-07 20:13:01,831 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-9 - HikariPool-1 - Shutdown initiated...
-2017-11-07 20:13:01,883 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-9 - HikariPool-1 - Shutdown completed.
-2017-11-07 20:13:02,173 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
-2017-11-07 20:13:02,175 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-9 - HikariPool-2 - Starting...
-2017-11-07 20:13:02,184 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-9 - HikariPool-2 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
-2017-11-07 20:13:02,188 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-9 - HikariPool-2 - Start completed.
-2017-11-07 20:13:02,189 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-9 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:13:02,189 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-9 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:13:02,192 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-9 - Database [default] connected at jdbc:postgresql://localhost/uts
-2017-11-07 20:13:02,198 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Starting application at 2017-11-07T14:43:02.196Z.
-2017-11-07 20:13:02,513 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
-2017-11-07 20:13:02,615 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-9 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    filters.ExampleFilter
-
-2017-11-07 20:13:02,616 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev)
-2017-11-07 20:13:02,644 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:13:02,648 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:13:02,651 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:13:02,653 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:13:02,654 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:13:02,655 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:13:02,655 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:13:02,656 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:13:02,656 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:13:02,657 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:13:02,657 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:13:02,657 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:13:02,658 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:13:02,658 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:13:02,658 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:13:02,659 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:14:08,781 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:14:08,783 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:14:08,783 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:14:08,783 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:14:08,783 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:14:08,783 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:14:08,784 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:14:08,785 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:14:08,785 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:16:03,385 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:16:03,387 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:16:03,388 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:16:03,389 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:16:03,389 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:16:03,389 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:16:03,390 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:16:03,390 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:16:03,390 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:16:03,390 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:16:03,390 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:22:58,384 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2017-11-07T14:52:58.383Z after 596s.
-2017-11-07 20:22:58,385 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - Shutting down connection pool.
-2017-11-07 20:22:58,385 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-13 - HikariPool-2 - Shutdown initiated...
-2017-11-07 20:22:58,419 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-13 - HikariPool-2 - Shutdown completed.
-2017-11-07 20:22:58,725 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
-2017-11-07 20:22:58,726 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-13 - HikariPool-3 - Starting...
-2017-11-07 20:22:58,742 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-13 - HikariPool-3 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
-2017-11-07 20:22:58,745 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-13 - HikariPool-3 - Start completed.
-2017-11-07 20:22:58,746 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-13 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:22:58,746 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-13 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:22:58,747 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-13 - Database [default] connected at jdbc:postgresql://localhost/uts
-2017-11-07 20:22:58,756 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Starting application at 2017-11-07T14:52:58.749Z.
-2017-11-07 20:22:59,041 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
-2017-11-07 20:22:59,125 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    filters.ExampleFilter
-
-2017-11-07 20:22:59,126 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev)
-2017-11-07 20:22:59,154 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:22:59,167 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:22:59,168 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:22:59,170 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:22:59,170 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:22:59,171 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:22:59,172 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:22:59,172 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:22:59,173 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:22:59,174 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:22:59,175 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:22:59,178 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:22:59,179 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:22:59,180 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:22:59,180 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:22:59,180 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:24:16,699 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - ApplicationTimer demo: Stopping application at 2017-11-07T14:54:16.699Z after 78s.
-2017-11-07 20:24:16,700 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - Shutting down connection pool.
-2017-11-07 20:24:16,700 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-38 - HikariPool-3 - Shutdown initiated...
-2017-11-07 20:24:16,729 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-38 - HikariPool-3 - Shutdown completed.
-2017-11-07 20:24:17,023 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - Creating Pool for datasource 'default'
-2017-11-07 20:24:17,028 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-38 - HikariPool-4 - Starting...
-2017-11-07 20:24:17,038 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-38 - HikariPool-4 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
-2017-11-07 20:24:17,045 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-38 - HikariPool-4 - Start completed.
-2017-11-07 20:24:17,045 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-38 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:24:17,045 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-38 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:24:17,045 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-38 - Database [default] connected at jdbc:postgresql://localhost/uts
-2017-11-07 20:24:17,050 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - ApplicationTimer demo: Starting application at 2017-11-07T14:54:17.048Z.
-2017-11-07 20:24:17,326 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
-2017-11-07 20:24:17,406 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-38 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    filters.ExampleFilter
-
-2017-11-07 20:24:17,408 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-38 - Application started (Dev)
-2017-11-07 20:24:17,437 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 20:24:17,442 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 20:24:17,443 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 20:24:17,445 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 20:24:17,446 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 20:24:17,446 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 20:24:17,447 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 20:24:17,447 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 20:24:17,448 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 20:24:17,448 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 20:24:17,449 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 20:24:17,449 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 20:24:17,450 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 20:24:17,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 20:24:17,452 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 20:24:17,452 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 20:30:55,393 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-4 - Starting coordinated shutdown from JVM shutdown hook
+2017-11-07 22:41:58,533 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2017-11-07 22:41:58,796 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-07 22:41:58,926 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info ;
+2017-11-07 22:41:58,932 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-07 22:41:58,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-07 22:41:58,935 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-07 22:41:58,935 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-07 22:41:58,936 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-07 22:41:58,936 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-07 22:41:58,938 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-07 22:41:58,940 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-07 22:43:37,144 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-07 22:43:37,146 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info ;
+2017-11-07 22:43:37,147 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-07 22:43:37,147 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-07 22:43:37,149 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-07 22:43:37,149 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-07 22:43:37,150 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-07 22:43:37,150 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-07 22:43:37,151 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-07 22:43:37,151 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-07 22:43:37,153 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-07 22:43:37,153 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-07 22:43:37,154 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 19:39:25,946 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-7 - Starting coordinated shutdown from JVM shutdown hook

@@ -30,7 +30,9 @@ class HomeController @Inject() (cc: ControllerComponents, db: Database)(implicit
 
   val userForm = Form(
     mapping(
-      "name" -> text)(SiteInfo.apply)(SiteInfo.unapply))
+      "site_id" -> number,
+      "name" -> text
+      )(SiteInfo.apply)(SiteInfo.unapply))
   def index = Action.async {
     // access "default" database
     Future({
@@ -45,13 +47,10 @@ class HomeController @Inject() (cc: ControllerComponents, db: Database)(implicit
           while (rs.next()) {
             /* val outString = rs.getString("name")*/
             val dataMap = Map("name" -> rs.getString("name"))
-            lst += new SiteInfo(rs.getString("name"))
+            lst += new SiteInfo(rs.getInt("site_id"),rs.getString("name"))
           }
 
-          val jstr = Json.toJson(
-            lst.map { t =>
-              Map("SiteName" -> t.name)
-            })
+
 
           Ok(views.html.index(lst.toList))
         } finally {
