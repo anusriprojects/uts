@@ -55,7 +55,7 @@
   <ul class="pagination">
   
   @for(pages <- 1 to siteInfoVo.total_pages){
-    <li class="page-item"><a class="page-link" href="@routes.HomeController.index(@pages)">@pages</a></li>
+    <li class="page-item"><a class="page-link" href="@routes.HomeController.index(pages)">@pages</a></li>
     }
  
   </ul>
