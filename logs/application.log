@@ -1,54 +1,728 @@
-2017-11-07 22:41:56,915 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2017-11-07 22:41:56,964 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Starting...
-2017-11-07 22:41:57,220 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
-2017-11-07 22:41:57,280 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-3 - HikariPool-1 - Start completed.
-2017-11-07 22:41:57,313 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 22:41:57,344 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 22:41:57,346 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://localhost/uts
-2017-11-07 22:41:57,370 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-11-07T17:11:57.367Z.
-2017-11-07 22:41:57,913 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
-2017-11-07 22:41:58,519 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-08 21:44:30,221 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2017-11-08 21:44:30,262 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-4 - HikariPool-1 - Starting...
+2017-11-08 21:44:30,536 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-4 - HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-11-08 21:44:30,597 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-4 - HikariPool-1 - Start completed.
+2017-11-08 21:44:30,640 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:44:30,679 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:44:30,680 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:postgresql://localhost/uts
+2017-11-08 21:44:30,705 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-11-08T16:14:30.694Z.
+2017-11-08 21:44:31,344 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2017-11-08 21:44:31,979 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     filters.ExampleFilter
 
-2017-11-07 22:41:58,533 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-11-07 22:41:58,796 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 22:41:58,926 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 22:41:58,932 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 22:41:58,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 22:41:58,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 22:41:58,935 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 22:41:58,935 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 22:41:58,936 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 22:41:58,936 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 22:41:58,937 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
-2017-11-07 22:41:58,938 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
-2017-11-07 22:41:58,940 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
-2017-11-07 22:43:37,144 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
-2017-11-07 22:43:37,146 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info ;
-2017-11-07 22:43:37,147 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
-2017-11-07 22:43:37,147 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
-2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
-2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
-2017-11-07 22:43:37,148 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
-2017-11-07 22:43:37,149 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
-2017-11-07 22:43:37,149 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
-2017-11-07 22:43:37,150 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
-2017-11-07 22:43:37,150 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
-2017-11-07 22:43:37,151 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
-2017-11-07 22:43:37,151 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
-2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
-2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
-2017-11-07 22:43:37,152 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
-2017-11-07 22:43:37,153 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {15, 'csdcds'}
-2017-11-07 22:43:37,153 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {16, 'v vc v'}
-2017-11-07 22:43:37,154 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
-2017-11-08 19:39:25,946 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-7 - Starting coordinated shutdown from JVM shutdown hook
+2017-11-08 21:44:31,992 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-11-08 21:44:32,245 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:44:32,372 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:44:32,375 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:44:32,392 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:44:32,393 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:44:32,395 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:44:32,396 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:44:32,397 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:44:32,398 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:48:51,636 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:48:51,638 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:48:51,642 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:48:51,642 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:48:51,642 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:48:51,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:48:51,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:48:51,645 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:48:51,645 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:49:16,942 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:49:16,944 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:49:16,946 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:49:16,946 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:49:16,947 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:49:16,947 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:49:16,947 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:49:16,948 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:49:16,948 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:50:22,906 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2017-11-08T16:20:22.906Z after 352s.
+2017-11-08 21:50:22,909 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2017-11-08 21:50:22,909 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-10 - HikariPool-1 - Shutdown initiated...
+2017-11-08 21:50:22,954 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-10 - HikariPool-1 - Shutdown completed.
+2017-11-08 21:50:23,329 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2017-11-08 21:50:23,331 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-10 - HikariPool-2 - Starting...
+2017-11-08 21:50:23,342 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-10 - HikariPool-2 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-11-08 21:50:23,350 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-10 - HikariPool-2 - Start completed.
+2017-11-08 21:50:23,350 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-10 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:50:23,350 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-10 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:50:23,350 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] connected at jdbc:postgresql://localhost/uts
+2017-11-08 21:50:23,356 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Starting application at 2017-11-08T16:20:23.354Z.
+2017-11-08 21:50:23,663 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2017-11-08 21:50:23,764 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    filters.ExampleFilter
+
+2017-11-08 21:50:23,767 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev)
+2017-11-08 21:50:23,799 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:50:23,808 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:50:23,814 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:50:23,817 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {17}
+2017-11-08 21:50:23,818 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:50:23,819 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:50:23,821 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:50:23,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:50:23,825 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:53:08,972 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - ApplicationTimer demo: Stopping application at 2017-11-08T16:23:08.972Z after 165s.
+2017-11-08 21:53:08,973 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Shutting down connection pool.
+2017-11-08 21:53:08,973 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-16 - HikariPool-2 - Shutdown initiated...
+2017-11-08 21:53:09,009 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-16 - HikariPool-2 - Shutdown completed.
+2017-11-08 21:53:09,323 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
+2017-11-08 21:53:09,325 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-16 - HikariPool-3 - Starting...
+2017-11-08 21:53:09,339 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-16 - HikariPool-3 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-11-08 21:53:09,346 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-16 - HikariPool-3 - Start completed.
+2017-11-08 21:53:09,347 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-16 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:53:09,347 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-16 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:53:09,347 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] connected at jdbc:postgresql://localhost/uts
+2017-11-08 21:53:09,352 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - ApplicationTimer demo: Starting application at 2017-11-08T16:23:09.350Z.
+2017-11-08 21:53:09,627 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
+2017-11-08 21:53:09,709 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    filters.ExampleFilter
+
+2017-11-08 21:53:09,710 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)
+2017-11-08 21:53:09,735 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:53:09,742 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:53:09,746 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:53:09,748 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {17}
+2017-11-08 21:53:09,749 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:53:09,751 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:53:09,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:53:09,756 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:53:09,757 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:54:37,366 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-19 - 
+
+! @760epbag3 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[illegal start of simple expression]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:75)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:56)
+	at play.runsupport.Reloader.reload(Reloader.scala:413)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.Server.getHandlerFor(Server.scala:63)
+	at play.core.server.Server.getHandlerFor$(Server.scala:48)
+	at play.core.server.AkkaHttpServer.getHandlerFor(AkkaHttpServer.scala:41)
+	at play.core.server.AkkaHttpServer.getHandler(AkkaHttpServer.scala:214)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:194)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$3(AkkaHttpServer.scala:106)
+	at akka.stream.impl.fusing.MapAsync$$anon$23.onPush(Ops.scala:1172)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:499)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:462)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:368)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:571)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:457)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:546)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:725)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:740)
+	at akka.actor.Actor.aroundReceive(Actor.scala:514)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:512)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:650)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:527)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:496)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-11-08 21:54:52,895 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-22 - ApplicationTimer demo: Stopping application at 2017-11-08T16:24:52.895Z after 103s.
+2017-11-08 21:54:52,896 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-22 - Shutting down connection pool.
+2017-11-08 21:54:52,896 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-22 - HikariPool-3 - Shutdown initiated...
+2017-11-08 21:54:52,928 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-22 - HikariPool-3 - Shutdown completed.
+2017-11-08 21:54:53,237 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-22 - Creating Pool for datasource 'default'
+2017-11-08 21:54:53,239 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-22 - HikariPool-4 - Starting...
+2017-11-08 21:54:53,251 [INFO] from com.zaxxer.hikari.pool.PoolBase in play-dev-mode-akka.actor.default-dispatcher-22 - HikariPool-4 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-11-08 21:54:53,268 [INFO] from com.zaxxer.hikari.HikariDataSource in play-dev-mode-akka.actor.default-dispatcher-22 - HikariPool-4 - Start completed.
+2017-11-08 21:54:53,269 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-22 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:54:53,269 [INFO] from org.jdbcdslog.ConnectionLogger in play-dev-mode-akka.actor.default-dispatcher-22 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:54:53,269 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-22 - Database [default] connected at jdbc:postgresql://localhost/uts
+2017-11-08 21:54:53,273 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-22 - ApplicationTimer demo: Starting application at 2017-11-08T16:24:53.271Z.
+2017-11-08 21:54:53,544 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2017-11-08 21:54:53,610 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-22 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    filters.ExampleFilter
+
+2017-11-08 21:54:53,612 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-22 - Application started (Dev)
+2017-11-08 21:54:53,639 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:54:53,647 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:54:53,652 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:54:53,654 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:54:53,655 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:54:53,660 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:54:53,661 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:54:53,667 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:54:53,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:02,909 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:02,911 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:55:02,912 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:02,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:02,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:55:02,913 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:55:02,913 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:55:02,913 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:55:02,913 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:55:04,601 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:04,611 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:55:04,615 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:04,621 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:04,622 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:55:04,623 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:55:04,624 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:55:04,625 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:55:04,626 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:55:06,157 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:06,160 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:55:06,162 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:06,163 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:06,164 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:55:06,165 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:55:07,921 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:07,922 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:55:07,923 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:55:07,924 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:55:11,828 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:11,829 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:11,830 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:11,830 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:11,830 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:11,831 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:11,831 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:11,831 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:11,831 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:21,107 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:21,109 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:55:21,111 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:21,111 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:21,111 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:55:21,111 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:55:21,111 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:55:21,112 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:55:21,112 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:55:21,909 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:21,910 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:55:21,911 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:55:21,912 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:55:23,336 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:23,337 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:55:23,338 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:23,338 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:23,339 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:55:23,339 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:55:25,197 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:25,198 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:55:25,200 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:25,200 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:25,200 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:55:25,200 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:55:25,201 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:55:25,201 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:55:25,201 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:55:26,727 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:26,728 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:26,730 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:26,730 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:26,730 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:26,730 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:26,731 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:26,731 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:26,731 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:31,261 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:31,264 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:31,266 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:31,267 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:32,929 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:32,931 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:55:32,932 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:32,932 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:32,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:55:32,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:55:32,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:55:32,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:55:32,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:55:34,298 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:34,299 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:55:34,301 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:34,301 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:34,301 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:55:34,301 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:55:34,302 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:55:34,302 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:55:34,302 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:55:35,651 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:35,653 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:55:35,655 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:35,655 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:35,655 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:55:35,656 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:55:37,784 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:37,786 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:37,788 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:46,436 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-2 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:46,437 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:46,439 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-2 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:46,439 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {17}
+2017-11-08 21:55:46,439 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:46,439 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:46,439 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:46,440 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:46,440 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-2 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:55:58,507 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:58,616 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - INSERT INTO site_info(name) VALUES('vf vcv v v ');
+2017-11-08 21:55:58,697 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:55:58,699 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:55:58,700 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {18}
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:55:58,701 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:06,994 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:06,998 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - INSERT INTO site_info(name) VALUES('hxhyycbh');
+2017-11-08 21:56:07,072 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:07,075 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:07,077 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:07,077 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:07,078 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:07,078 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:07,079 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:07,079 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:07,079 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:09,182 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:09,184 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:09,186 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:11,725 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:11,727 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:11,728 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:11,729 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:13,178 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:13,179 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:13,180 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:13,180 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:13,181 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:13,181 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:13,181 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:13,181 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:13,181 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:14,033 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:14,037 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:56:14,039 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:14,039 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:14,040 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:56:14,040 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:56:14,040 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:56:14,040 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:56:14,040 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:56:14,864 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:14,866 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:14,868 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:14,869 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {19}
+2017-11-08 21:56:14,869 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:14,870 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:14,871 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:14,871 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:22,816 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:22,819 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - INSERT INTO site_info(name) VALUES('vfvdfvd');
+2017-11-08 21:56:22,899 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:22,901 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:22,903 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:22,904 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:22,904 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:22,905 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:22,905 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:22,906 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:22,906 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:24,817 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:24,820 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:24,821 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:24,822 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:56:26,310 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:26,311 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:26,313 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:26,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:27,059 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:27,060 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:27,061 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:27,062 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:27,062 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:27,062 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:27,062 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:27,063 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:27,064 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:27,952 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:27,953 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:27,954 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:27,955 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:28,989 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:28,991 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:56:28,992 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:56:28,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:56:29,870 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:29,871 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:29,873 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:29,873 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:29,873 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:29,874 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:29,874 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:29,874 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:29,874 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:56:30,929 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:30,931 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:56:30,933 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:30,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:30,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:56:30,933 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:56:30,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:56:30,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:56:30,934 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:56:31,920 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:31,921 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:31,923 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:32,701 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:32,702 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:32,703 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:32,704 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:33,899 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:33,901 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:33,903 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:34,682 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:34,683 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:56:34,684 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:34,684 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:34,684 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:56:34,684 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:56:34,685 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:56:34,685 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:56:34,685 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:56:35,355 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:35,356 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:35,358 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:56:36,910 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:36,914 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:56:36,918 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:56:36,919 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:56:37,677 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:37,679 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:37,680 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:37,680 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:37,680 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:37,680 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:37,680 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:37,681 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:37,681 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:38,759 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-4 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:38,761 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:38,762 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-4 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:38,763 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:38,763 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:38,763 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:38,764 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:38,764 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:38,764 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-4 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:56:54,447 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:54,449 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:56:54,451 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:56:57,215 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:57,216 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:57,217 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:57,218 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:57,750 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:57,751 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:56:57,752 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:56:58,451 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:56:58,454 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:56:58,455 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:56:58,455 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {20}
+2017-11-08 21:56:58,456 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:56:58,456 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:56:58,458 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:56:58,458 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:56:58,458 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:57:05,466 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:05,471 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {20}
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:57:05,472 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:57:05,473 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:57:06,631 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:06,632 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {20}
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:57:06,634 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:57:13,766 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:13,768 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - INSERT INTO site_info(name) VALUES('vdfvfdvdfv');
+2017-11-08 21:57:13,818 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-6 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:13,820 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:57:13,822 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-6 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:13,823 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:13,823 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:57:13,823 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:57:13,824 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:57:13,824 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:57:13,825 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-6 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:57:16,111 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:16,112 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 20;
+2017-11-08 21:57:16,113 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:16,113 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:16,113 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {21, 'vdfvfdvdfv'}
+2017-11-08 21:57:20,628 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-5 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:20,630 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:57:20,631 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-5 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:20,631 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:20,631 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:57:20,632 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:57:20,632 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:57:20,632 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:57:20,632 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-5 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-08 21:57:22,517 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:22,519 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:57:22,520 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:57:23,363 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:23,364 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:57:23,366 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:57:23,367 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:57:24,087 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:24,088 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-08 21:57:24,090 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:24,090 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:24,090 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-08 21:57:24,090 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-08 21:57:24,090 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-08 21:57:24,091 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-08 21:57:24,091 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-08 21:57:24,990 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:24,992 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-08 21:57:24,993 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-08 21:57:24,994 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-08 21:57:25,803 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:25,804 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-08 21:57:25,805 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:25,805 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:25,805 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-08 21:57:25,806 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-08 21:57:25,806 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-08 21:57:25,806 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-08 21:57:25,806 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-08 21:57:26,664 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-7 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-08 21:57:26,666 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-7 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {21}
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-08 21:57:26,668 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-7 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-09 06:22:51,729 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-3 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:22:51,730 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-09 06:22:51,731 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-3 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:22:51,731 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {21}
+2017-11-09 06:22:51,731 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-09 06:22:51,732 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-09 06:22:51,732 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-09 06:22:51,732 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-09 06:22:51,732 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-3 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-09 06:22:53,487 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:22:53,489 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-09 06:22:53,490 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:22:53,490 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:22:53,490 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-09 06:22:53,490 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-09 06:22:53,491 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-09 06:22:53,491 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-09 06:22:53,491 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-09 06:22:54,764 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:22:54,766 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-09 06:22:54,766 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:22:54,766 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:22:54,767 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-09 06:22:54,767 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-09 06:22:54,767 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-09 06:22:54,767 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-09 06:22:54,767 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-09 06:22:56,023 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:22:56,025 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 20;
+2017-11-09 06:22:56,026 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:22:56,027 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:22:56,027 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21, 'vdfvfdvdfv'}
+2017-11-09 06:22:58,660 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:22:58,661 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 0;
+2017-11-09 06:22:58,662 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {1, 'Site 1'}
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {2, 'Site 2'}
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {3, 'Site 3'}
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {4, 'xsaxas'}
+2017-11-09 06:22:58,663 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {5, 'fdvdfv'}
+2017-11-09 06:24:09,638 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:24:09,639 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 5;
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {6, 'vdfvdf'}
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {7, 'bgbgb'}
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {8, 'vfdv'}
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {9, ' d dfdvfdv'}
+2017-11-09 06:24:09,643 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {10, 'fdvfd'}
+2017-11-09 06:24:10,544 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:24:10,545 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 10;
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {11, 'dvf'}
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {12, 'vfdfv'}
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {13, 'yh'}
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {14, 'njhbnhjb'}
+2017-11-09 06:24:10,547 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {15, 'csdcds'}
+2017-11-09 06:24:11,311 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:24:11,312 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 15;
+2017-11-09 06:24:11,313 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:24:11,313 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:24:11,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {16, 'v vc v'}
+2017-11-09 06:24:11,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {17, 'cdscdcdscsdcsdcdscs'}
+2017-11-09 06:24:11,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {18, 'vf vcv v v '}
+2017-11-09 06:24:11,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {19, 'hxhyycbh'}
+2017-11-09 06:24:11,314 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {20, 'vfvdfvd'}
+2017-11-09 06:24:12,273 [INFO] from org.jdbcdslog.ConnectionLogger in application-akka.actor.default-dispatcher-8 - connect to URL jdbc:postgresql://localhost/uts for user postgres
+2017-11-09 06:24:12,274 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: SELECT * from site_info  limit 5 offset 20;
+2017-11-09 06:24:12,276 [INFO] from org.jdbcdslog.StatementLogger in application-akka.actor.default-dispatcher-8 - java.sql.Statement.executeQuery: select count(*) as count from site_info;
+2017-11-09 06:24:12,276 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21}
+2017-11-09 06:24:12,276 [INFO] from org.jdbcdslog.ResultSetLogger in application-akka.actor.default-dispatcher-8 - java.sql.ResultSet.next {21, 'vdfvfdvdfv'}
+2017-11-09 06:24:30,990 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-10 - Starting coordinated shutdown from JVM shutdown hook

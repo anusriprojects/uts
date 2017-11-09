@@ -1,4 +1,4 @@
-@(lst: List[SiteInfo], style: String = "scala")
+@(siteInfoVo: SiteInfoVo, style: String = "scala")
 @import helper._
 
 
@@ -43,7 +43,7 @@
 		<th>Site Id</th>
 		<th>Site Name</th>
 	</tr>
-   @for(site <- lst){
+   @for(site <- siteInfoVo.sites){
       <tr>
      	 <td>@site.site_id</td>
           <td>@site.name</td>
@@ -51,7 +51,15 @@
     }
 </table>
 
-
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+  
+  @for(pages <- 1 to siteInfoVo.total_pages){
+    <li class="page-item"><a class="page-link" href="@routes.HomeController.index(pages)">@pages</a></li>
+    }
+ 
+  </ul>
+</nav>
 
 
 

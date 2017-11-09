@@ -13,6 +13,7 @@ import play.api.mvc.AbstractController
 import play.api.mvc.ControllerComponents
 import play.api.data.Form
 import play.api.data.Forms._
+import models.SiteInfoVo
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -31,28 +32,38 @@ class HomeController @Inject() (cc: ControllerComponents, db: Database)(implicit
   val userForm = Form(
     mapping(
       "site_id" -> number,
-      "name" -> text
-      )(SiteInfo.apply)(SiteInfo.unapply))
-  def index = Action.async {
+      "name" -> text)(SiteInfo.apply)(SiteInfo.unapply))
+  def index(page: Int) = Action.async { implicit request =>
     // access "default" database
     Future({
 
       db.withConnection { conn =>
         // do whatever you need with the connection
         try {
+          val offset = (page - 1) * 5
           val stmt = conn.createStatement
-          val rs = stmt.executeQuery("SELECT * from site_info ")
+          val rs = stmt.executeQuery(s"SELECT * from site_info  limit 5 offset $offset")
+
+          val countStmt = conn.createStatement
+          val countrs = countStmt.executeQuery("select count(*) as count from site_info")
+
+          var count: Int = 0
+
+          while (countrs.next()) {
+            /* val outString = rs.getString("name")*/
+            count = countrs.getInt("count")
+          }
           var lst: ListBuffer[SiteInfo] = new ListBuffer[SiteInfo]()
 
           while (rs.next()) {
             /* val outString = rs.getString("name")*/
             val dataMap = Map("name" -> rs.getString("name"))
-            lst += new SiteInfo(rs.getInt("site_id"),rs.getString("name"))
+            lst += new SiteInfo(rs.getInt("site_id"), rs.getString("name"))
           }
 
+          val retVal = new SiteInfoVo(lst.toList, page, if (count % 5.0 > 0) (count / 5) + 1 else count / 5)
 
-
-          Ok(views.html.index(lst.toList))
+          Ok(views.html.index(retVal))
         } finally {
 
         }
@@ -61,8 +72,6 @@ class HomeController @Inject() (cc: ControllerComponents, db: Database)(implicit
     })(exec)
 
   }
-
-  
 
   def addSite = Action.async { implicit request =>
     // access "default" database
